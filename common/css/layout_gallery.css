@@ -1,0 +1,75 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+#pagebuild_out {
+	height: 100%;
+}
+
+.PB_out_base {
+	background: url("../images/bg_pagebuild_base.png") repeat-x;
+	background-position: 0 0;
+}
+
+#pagebuild_in {
+	position: relative;
+	min-height: 100%;
+	min-width: 950px; /* 親要素の幅越えに対するスクロールバーへの対応 */
+	overflow-x: hidden; /* 親要素の幅越えに対するスクロールバーへの対応 */
+	z-index: 2;
+}
+
+/*　↓IE6以下用ハック↓　*/
+* html #pagebuild_in {
+	height: 100%;
+}
+
+#container {
+	width: 950px;
+	margin: 0 auto; /* サイトの中心揃え */
+	padding-bottom: 115px;
+	text-align: left;
+}
+
+/*　↓IE6以下用ハック↓　*/
+* html #container {
+	height: 100%;
+}
+
+#header {
+	width: 950px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 950px;
+	height: 115px;
+}
+
+#footer_bg {
+	width: 100%;
+	height: 115px;
+	position: relative;
+	bottom: 115px;
+	margin-bottom: -115px;
+}
+
+.F_bg_base {
+	background: url("../images/bg_footer_base.gif") repeat-x;
+	background-position: 0 0;
+}
+
+
+/*-- ########################################################### --*/
+
+#wrapper {
+	width: 950px;
+	margin: 0 0 60px;
+}
+
+

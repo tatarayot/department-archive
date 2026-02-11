@@ -1,0 +1,755 @@
+h2 {
+	margin-bottom: 25px;
+}
+
+h2 span {
+	display: none;
+	font-size: 0; /* for IE */
+	line-height: 0; /* for IE */
+}
+
+h2.h2_hidden {
+	margin: 0 !important;
+	display: none;
+	font-size: 0; /* for IE */
+	line-height: 0; /* for IE */
+}
+
+
+/*-- ### HOME ############################################ --*/
+
+/*-- ### News & Topics for HOME ### --*/
+
+h2 div#NandT {
+	display: block;
+	width: 400px;
+	height: 40px;
+	background: url("../images/tag_news.png") no-repeat;
+	background-position: 0 0;
+	position: relative;
+}
+
+/* ↓for lte IE6↓ */
+* html h2 div#NandT {
+	position: static;
+}
+
+#bt_newslist {
+	position: absolute;
+	top: 10px;
+	right: 19px;
+}
+
+#bt_newslist a {
+	display: block;
+	width: 100px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	outline: 0;
+	background: url("../images/bt_newslist_ro.png") no-repeat;
+	background-position: 0 0;
+	overflow: hidden;
+}
+
+#bt_newslist a:hover {
+	background-position: 0 -20px;
+	text-decoration: none;
+}
+
+dl#list_NandT {
+	margin: 0 15px 0; 
+	padding: 0;
+}
+
+dl#list_NandT dt {
+	margin: 0 0 5px;
+	padding: 0;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+dl#list_NandT dd {
+	margin: 0 0 15px;
+	padding: 0 1.0em 15px;
+	border-bottom: dotted 1px #aaaaaa;
+}
+
+
+/*-- ### flash ### --*/
+
+#area_flash {
+	margin: 7px 0 0 5px;
+	width: 510px;
+	height: 400px;
+}
+
+
+/*-- ### banner 2015.04 ### --*/
+
+div#area_banner {
+	width: 510px;
+	margin: 45px 0 0 5px;
+}
+
+div#area_banner a {
+	display: block;
+	width: 245px;
+	height: 70px;
+	margin-bottom: 15px;
+	float: left;
+}
+
+div#area_banner > *:first-child + *,
+div#area_banner > *:first-child + * + * + *,
+div#area_banner > *:first-child + * + * + * + * + *,
+div#area_banner > *:first-child + * + * + * + * + * + * + *,
+div#area_banner > *:first-child + * + * + * + * + * + * + * + * + * {
+	margin-left: 20px;
+}
+
+div#area_banner a:hover {
+	cursor:pointer;
+	filter: alpha(opacity=70);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=70)";  /* ie 8 */
+	-moz-opacity:0.7;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.7;              /* Safari 1.x */
+	opacity:0.7;
+	zoom:1;
+}
+
+
+/*-- ### BASE ############################################ --*/
+
+.contents01 {
+	margin: 30px 25px 30px;
+}
+
+.contents02 {
+	margin: 20px 25px 60px;
+}
+
+.contents03 {
+	margin: 40px 25px 30px;
+}
+
+span.deco01 {
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 0 0 10px;
+}
+
+h3.tag_long {
+	width: 875px;
+	height: 40px;
+	color: #1444d6;
+	font-weight: normal;
+	font-size: 1.2em;
+	margin: 30px 5px 20px;
+	padding: 10px 0 0 65px;
+	background: url("../images/bg_h3_tag_long.jpg") no-repeat;
+	background-position: 0 0;
+}
+
+
+/*-- ### 研究内容 ############################################ --*/
+
+.box_research {
+	margin: 20px 0 50px;
+	border: solid 1px #cccccc;
+}
+
+h3.tag_research {
+	width: 585px;
+	height: 49px;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 1.2em;
+	padding: 13px 0 0 65px;
+	background: url("../images/bg_h3_tag_research.jpg") no-repeat;
+	background-position: 0 0;
+	position: relative;
+	top: 0;
+	left: 4px;
+}
+
+.wrapper_research {
+	margin: 0;
+	padding: 0 0 20px;
+}
+
+.box_research p{
+	margin:  5px 20px 20px;
+}
+
+img.float_L_research {
+	float: left;
+	padding: 5px;
+	background-color: #ffffff;
+	margin: 0 20px 10px 30px;
+}
+
+img.float_R_research {
+	float: right;
+	padding: 5px;
+	background-color: #ffffff;
+	margin: 0 30px 10px 20px;
+}
+
+#box_research_navi {
+	width: 262px;
+	padding: 4px;
+	background-color: #e0e0e0;
+}
+
+/*　↓IE6以下用ハック↓　*/
+* html #box_research_navi {
+	width: 270px;
+}
+
+ul#research_navi {
+	list-style: none;
+	margin: 0;
+	border: solid 1px #cbcbcb;
+	background-color: #ffffff;
+}
+
+ul#research_navi li {
+	list-style: none;
+	margin: 10px 5px;
+	border-bottom: dotted 1px #cccccc;
+	line-height: 1.5em;
+}
+
+ul#research_navi li a {
+	display: block;
+	margin: 0 5px 10px;
+	padding-left: 10px;
+	border-left: solid 6px #cccccc;
+	color: #333333 !important;
+	text-decoration: none !important;
+}
+
+ul#research_navi li a:hover {
+	border-left: solid 6px #d82b2b;
+	color: #333333 !important;
+	text-decoration: underline !important;
+}
+
+ul#research_navi li#last {
+	border-bottom: none;
+}
+
+
+/*-- ### 研究業績 ############################################ --*/
+
+#box_achieve_navi {
+	width: 262px;
+	padding: 4px;
+	background-color: #e0e0e0;
+}
+
+/*　↓IE6以下用ハック↓　*/
+* html #box_achieve_navi {
+	width: 270px;
+}
+
+ul#achieve_navi {
+	list-style: none;
+	margin: 0;
+	border: solid 1px #cbcbcb;
+	background-color: #ffffff;
+}
+
+ul#achieve_navi li {
+	list-style: none;
+	margin: 10px 5px;
+	border-bottom: dotted 1px #cccccc;
+	line-height: 1.5em;
+}
+
+ul#achieve_navi li a {
+	display: block;
+	margin: 0 5px 10px;
+	padding-left: 10px;
+	border-left: solid 6px #cccccc;
+	color: #333333 !important;
+	text-decoration: none !important;
+}
+
+ul#achieve_navi li a:hover {
+	border-left: solid 6px #65d82b;
+	color: #333333 !important;
+	text-decoration: underline !important;
+}
+
+ul#achieve_navi li#last {
+	border-bottom: none;
+}
+
+h4.h4_tag_achieve {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 5px 15px 5px;
+}
+
+ul.list_achieve {
+	list-style: none;
+	margin: 0 20px 30px;
+}
+
+ul.list_achieve li {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 10px 20px;
+	background: url("../images/ob_list_disc01.gif") no-repeat;
+	background-position: 0 0;
+}
+
+
+/*-- ### 講義 ############################################ --*/
+
+#box_lecture_navi {
+	width: 262px;
+	padding: 4px;
+	background-color: #e0e0e0;
+}
+
+/*　↓IE6以下用ハック↓　*/
+* html #box_lecture_navi {
+	width: 270px;
+}
+
+ul#lecture_navi {
+	list-style: none;
+	margin: 0;
+	border: solid 1px #cbcbcb;
+	background-color: #ffffff;
+}
+
+ul#lecture_navi li {
+	list-style: none;
+	margin: 10px 5px;
+	border-bottom: dotted 1px #cccccc;
+	line-height: 1.5em;
+}
+
+ul#lecture_navi li a {
+	display: block;
+	margin: 0 5px 10px;
+	padding-left: 10px;
+	border-left: solid 6px #cccccc;
+	color: #333333 !important;
+	text-decoration: none !important;
+}
+
+ul#lecture_navi li a:hover {
+	border-left: solid 6px #d82b9e;
+	color: #333333 !important;
+	text-decoration: underline !important;
+}
+
+ul#lecture_navi li#last {
+	border-bottom: none;
+}
+
+ul.list_ppt {
+	list-style: none;
+	margin: 5px 0 20px;
+	padding: 0;
+}
+
+ul.list_ppt li {
+	list-style: none;
+	margin: 0 0 0 40px;
+	padding: 0 0 0 55px;
+	background: url(../images/icon_ppt.png) no-repeat;
+	background-position: 0 5px;
+	line-height: 450%;
+}
+
+
+/*-- ### 写真館 ############################################ --*/
+
+#box_gallery_navi {
+	width: 262px;
+	padding: 4px;
+	background-color: #e0e0e0;
+}
+
+/*　↓IE6以下用ハック↓　*/
+* html #box_gallery_navi {
+	width: 270px;
+}
+
+ul#gallery_navi {
+	list-style: none;
+	margin: 0;
+	border: solid 1px #cbcbcb;
+	background-color: #ffffff;
+}
+
+ul#gallery_navi li {
+	list-style: none;
+	margin: 10px 5px;
+	border-bottom: dotted 1px #cccccc;
+	line-height: 1.5em;
+}
+
+ul#gallery_navi li a {
+	display: block;
+	margin: 0 5px 10px;
+	padding-left: 10px;
+	border-left: solid 6px #cccccc;
+	color: #333333 !important;
+	text-decoration: none !important;
+}
+
+ul#gallery_navi li a:hover {
+	border-left: solid 6px #d8d82b;
+	color: #333333 !important;
+	text-decoration: underline !important;
+}
+
+ul#gallery_navi li#last {
+	border-bottom: none;
+}
+
+ul.gallery_photo {
+	list-style: none;
+	margin: 10px 0 0 25px;
+	padding: 0 0 5px;
+}
+
+ul.gallery_photo li {
+	list-style: none;
+	margin: 0 20px 0 0;
+	padding: 0 0 15px;
+	float: left;
+}
+
+ul.gallery_photo li a {
+	display: block;
+	padding: 3px;
+	border: 1px solid #e6e6e6;
+	background-color: #e6e6e6;
+}
+
+ul.gallery_photo li a:hover {
+	border: 1px solid #00a8e5;
+}
+
+
+/*-- ### リンク ############################################ --*/
+
+ul.list_link {
+	list-style: none;
+	margin: 10px 0 20px;
+	padding: 0;
+}
+
+ul.list_link li {
+	list-style: none;
+	margin: 0 0 0 40px;
+	padding: 0 0 0 55px;
+	background: url(../images/icon_site.png) no-repeat;
+	background-position: 0 2px;
+	line-height: 400%;
+}
+
+ul.list_link_base {
+	list-style: none;
+	margin: 10px 0 20px;
+	padding: 0;
+}
+
+ul.list_link li {
+	list-style: none;
+}
+
+
+/*-- ### 交通アクセス ############################################ --*/
+
+ul.list_access {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.list_access li {
+	list-style: none;
+	margin: 0 0 0 40px;
+	padding: 0 0 0 55px;
+	background: url(../images/icon_site.png) no-repeat;
+	background-position: 0 2px;
+	line-height: 400%;
+}
+
+
+/*-- ### メンバー ############################################ --*/
+
+table.list_member {
+	width: 860px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	font-size: 1.1em;
+}
+
+table.list_member th {
+	margin: 0;
+	padding: 8px 15px;
+	text-align: left;
+	font-weight: normal;
+	color: #ffffff;
+	background: url(../images/bg_th_member.gif) no-repeat;
+	background-position: 0 bottom;
+	border-top: solid 1px #1444d6;
+	border-bottom: solid 1px #1444d6;
+	border-right: solid 1px #ffffff;
+}
+
+table.list_member td {
+	margin: 0;
+	padding: 12px 15px;
+	text-align: left;
+	font-weight: bold;
+	color: #333333;
+	border-bottom: solid 1px #95bce2;
+}
+
+table.list_member th.add_center,table.list_member td.add_center {
+	text-align: center;
+}
+
+table.list_member th.add_line {
+	border-right: none;
+}
+
+table.list_member td.add_weight {
+	font-weight: normal;
+}
+
+tr.add_color td {
+	background-color: #ecf6fc;
+}
+
+
+/*-- ### メンバー プロフィール 2015.03 ############################################ --*/
+
+a.go_profile {
+	padding: 0 25px 0 0;
+	color: #333333;
+	text-decoration: underline;
+	background: url("../images/icon_go_profile.gif") no-repeat;
+	background-position: right 0;
+}
+
+a.go_profile:hover {
+	text-decoration: none;
+}
+
+div.area_profile {
+	width: 860px;
+	margin: 0 auto 120px;
+}
+
+table.table_profile {
+	width: 760px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	empty-cells: show;
+	border: solid 2px #a8c1dc;
+}
+
+table.table_profile th, table.table_profile td {
+	margin: 0;
+	padding: 10px 20px;
+	color: #333333;
+	font-size: 1.0em;
+	border: solid 1px #a8c1dc;
+}
+
+table.table_profile th {
+	font-weight: bold;
+	text-align: center;
+	background-color: #bcd3eb;
+}
+
+table.table_profile td {
+	font-weight: normal;
+	text-align: left;
+	background-color: #ecf6fc;
+}
+
+table.table_profile td#photo {
+	text-align: center;
+}
+
+table.table_profile td#photo img {
+	width: 120px;
+	padding: 4px;
+	background-color: #ffffff !important;
+	border: solid 1px #cccccc;
+}
+
+table.table_profile td#name {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #ffffff;
+	padding-left: 70px;
+	background: url("../images/bg_profile_name.jpg") no-repeat;
+	background-position: 0 0;
+}
+
+table.table_profile td#name span#ja {
+	padding-right: 2em;
+}
+
+dl.dl_profile {
+	margin: 0.6em 0 -0.6em;
+	padding: 0;
+	line-height: 1.2em;
+}
+
+dl.dl_profile dt {
+	margin: 0;
+	padding: 0;
+}
+
+dl.dl_profile dd {
+	position: relative;
+	top: -1.2em;
+	left: 8em;
+	width: 430px;
+}
+
+div.go_ptop {
+	width: 860px;
+	height: 20px;
+	margin: 10px 0 0;
+	position: relative;
+}
+
+div.go_ptop a {
+	width: 115px;
+	height: 20px;
+	background: url("../images/bt_ptop_ro.gif") no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	top: 0;
+	right: 50px;
+}
+
+div.go_ptop a:hover {
+	background-position: 0 -20px;
+}
+
+
+/*-- ### 写真館 2015.03 ############################################ --*/
+
+div#container_gallery {
+	width: 910px;
+	margin: 35px auto 0;
+}
+
+div#container_gallery div.grid_gallery {
+	width: 206px;
+	margin: 0 10px 20px;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #ffffff;
+	-moz-box-shadow: 0 0 3px #888888;    /* Firefox */
+	-webkit-box-shadow: 0 0 3px #888888; /* Safari,Chrome */
+	box-shadow: 0 0 3px #888888;         /* CSS3 */
+	behavior: url(../common/js/PIE.htc);
+	float: left;
+}
+
+div#container_gallery div.grid_gallery p {
+	text-align: left !important;
+}
+
+div#container_gallery div.grid_gallery p.grid_data {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 10px 15px;
+	padding: 0 0 10px;
+	border-bottom: solid 1px #cccccc;
+}
+
+div#container_gallery div.grid_gallery p.grid_text1 {
+	margin: 10px 15px;
+	padding: 5px 0 0;
+}
+
+div#container_gallery div.grid_gallery a img {
+	border: 3px solid #ffffff;
+}
+
+div#container_gallery div.grid_gallery a:hover img {
+	border: 3px solid #adbef1;
+}
+
+
+/*-- ### 教授からのメッセージ 2015.03 ############################################ --*/
+
+div.area_message {
+	width: 820px;
+	margin: 0 auto;
+}
+
+div.area_message img {
+	float: left;
+	width: 240px;
+}
+
+div.area_message p {
+	float: right;
+	width: 540px;
+	font-size: 1.1em;
+	line-height: 1.8em;
+	margin: 0;
+	padding: 10px 0 0;
+}
+
+div.area_message ol {
+	margin: 50px 0 30px;
+	padding: 10px 20px 0 40px;
+	border-top: dotted 1px #cccccc;
+}
+
+div.area_message ol span {
+	display: block;
+	font-weight: bold;
+	margin: 0 0 3px -25px;
+}
+
+div.area_message dl {
+	margin: 0 20px 20px 15px;
+	padding: 0;
+	line-height: 1.3em;
+}
+
+div.area_message dl span {
+	display: block;
+	font-weight: bold;
+	margin: 0 0 20px 0;
+}
+
+div.area_message dl dt {
+	margin: -0.9em 0 0;
+	padding: 0;
+}
+
+div.area_message dl dd {
+	position: relative;
+	top: -1.3em;
+	left: 8em;
+	width: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+

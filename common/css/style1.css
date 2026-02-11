@@ -1,0 +1,309 @@
+#wrapper {
+	font-size: 1.3em;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+
+.link_a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	outline: 0;
+	overflow: hidden;
+}
+
+
+/*-- ### ヘッダー ############################################ --*/
+
+#header {
+	position: relative;
+	width: 950px;
+	height: 168px;
+}
+
+ul#header_navi {
+	width: 950px;
+	height: 35px;
+	background: url("../images/bg_header_navi.gif") no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style: none;
+}
+
+ul#header_navi li {
+	list-style: none;
+}
+
+li#bt_link {
+	position: absolute;
+	top: 0;
+	left: 557px;
+}
+
+li#bt_access {
+	position: absolute;
+	top: 0;
+	left: 629px;
+}
+
+li#bt_contact {
+	position: absolute;
+	top: 0;
+	left: 743px;
+}
+
+li#bt_English {
+	position: absolute;
+	top: 0;
+	left: 859px;
+}
+
+h1 span {
+	display: none;
+	font-size: 0; /* for IE */
+	line-height: 0; /* for IE */
+}
+
+h1#header_title a {
+	display: block;
+	width: 550px;
+	height: 98px;
+	position: absolute;
+	top: 53px;
+	left: 6px;
+	z-index: 10;
+}
+
+h1#header_title a:visited,h1#header_title a:hover,h1#header_title a:active {
+	text-decoration: none;
+}
+
+div#header_img {
+	width: 580px;
+	height: 75px;
+	background: url("../images/bg_header.png") no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	top: 76px;
+	left: 407px;
+	z-index: 9;
+}
+
+
+/*-- ### メインナビ ############################################ --*/
+
+ul#main_navi {
+	width: 950px;
+	height: 71px;
+	margin: 0;
+	background: url("../images/bg_main_navi.gif") no-repeat;
+	background-position: 0 0;
+	position: relative;
+	list-style: none;
+}
+
+ul#main_navi li {
+	list-style: none;
+}
+
+li#bt_home {
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+
+li#bt_research {
+	position: absolute;
+	top: 0;
+	left: 110px;
+}
+
+li#bt_achievement {
+	position: absolute;
+	top: 0;
+	left: 226px;
+}
+
+li#bt_member {
+	position: absolute;
+	top: 0;
+	left: 352px;
+}
+
+li#bt_recruitment {
+	position: absolute;
+	top: 0;
+	left: 468px;
+}
+
+li#bt_lecture {
+	position: absolute;
+	top: 0;
+	left: 614px;
+}
+
+li#bt_gallery {
+	position: absolute;
+	top: 0;
+	left: 709px;
+}
+
+li#bt_blog {
+	position: absolute;
+	top: 0;
+	left: 810px;
+}
+
+
+/*-- ### メインナビ 2015.03 ############################################ --*/
+
+ul#main_navi2 {
+	width: 950px;
+	height: 71px;
+	margin: 0;
+	background: url("../images/bg_main_navi2.gif") no-repeat;
+	background-position: 0 0;
+	position: relative;
+	list-style: none;
+}
+
+ul#main_navi2 li {
+	list-style: none;
+}
+
+li#bt_home2 {
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+
+li#bt_message2 {
+	position: absolute;
+	top: 0;
+	left: 69px;
+}
+
+li#bt_research2 {
+	position: absolute;
+	top: 0;
+	left: 218px;
+}
+
+li#bt_achievement2 {
+	position: absolute;
+	top: 0;
+	left: 319px;
+}
+
+li#bt_member2 {
+	position: absolute;
+	top: 0;
+	left: 420px;
+}
+
+li#bt_recruitment2 {
+	position: absolute;
+	top: 0;
+	left: 521px;
+}
+
+li#bt_lecture2 {
+	position: absolute;
+	top: 0;
+	left: 648px;
+}
+
+li#bt_gallery2 {
+	position: absolute;
+	top: 0;
+	left: 729px;
+}
+
+li#bt_blog2 {
+	position: absolute;
+	top: 0;
+	left: 810px;
+}
+
+
+/*-- ### フッター ############################################ --*/
+
+#area_address {
+	margin: 25px 0 10px 5px;
+	font-size: 1.1em;
+	text-align: left;
+}
+
+#area_address a {
+	color: #333333 !important;
+	text-decoration: none !important;
+	font-size: 1.1em;
+	font-weight: bold;
+	background: url(../images/ob_arrow02_ro.gif) no-repeat;
+	background-position: 0 -1px;
+	padding-left: 24px;
+}
+
+#area_address a:hover {
+	color: #00a8e5 !important;
+	text-decoration: none !important;
+	background: url(../images/ob_arrow02_ro.gif) no-repeat;
+	background-position: 0 -81px;
+}
+
+#area_address span {
+	display: block;
+	margin: 2px 0 0;
+	padding-left: 24px;
+}
+
+
+/*-- ############################################### --*/
+
+#notes {
+	position: absolute;
+	top: 22px;
+	right: 8px;
+}
+
+#notes,#notes a {
+	color: #333333 !important;
+}
+
+
+/*-- ############################################### --*/
+
+#bt_ptop {
+	width: 115px;
+	height: 20px;
+	position: absolute;
+	top: -15px;
+	right: 7px
+}
+
+#bt_ptop a {
+	width: 115px;
+	height: 20px;
+	background: url("../images/bt_ptop_ro.gif") no-repeat;
+	background-position: 0 0;
+}
+
+#bt_ptop a:hover {
+	background-position: 0 -20px;
+}
+
+
+/*-- ### パンくず ############################################ --*/
+
+#area_topicpath {
+	font-size: 1.1em;
+	margin: 15px 0 10px 5px;
+	padding-left: 22px;
+	background: url("../images/icon_home.png") no-repeat;
+	background-position: 0 -1px;
+}
+
+

@@ -1,0 +1,147 @@
+/*-- ########################################################### 
+ *	フッターを下部固定（ウィンドウの可変に対応）
+ *-- ########################################################### --*/
+
+/* ----------------------------------------------- 
+ *	footer_bg が不必要時は、pagebuild_out も削除
+ * ----------------------------------------------- */
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+body#home {
+	height: 100%;
+	background: url("../images/bg_body.gif");
+	background-position: 0 0;
+}
+
+#pagebuild_out {
+	position: relative;
+}
+
+/*　↓IE6以下用ハック↓　*/
+* html #pagebuild_out {
+	height: 100%;
+}
+
+/*　↓IE7以外のモダンブラウザ用ハック↓　*/
+html>/**/body #pagebuild_out {
+	height: 100%;
+}
+
+.PB_out_home {
+	background: url("../images/bg_pagebuild_home.png") repeat-x;
+	background-position: 0 0;
+}
+
+.PB_out_base {
+	background: url("../images/bg_pagebuild_base.png") repeat-x;
+	background-position: 0 0;
+}
+
+#pagebuild_in {
+	position: relative;
+	min-height: 100%;
+	min-width: 950px; /* 親要素の幅越えに対するスクロールバーへの対応 */
+	overflow-x: hidden; /* 親要素の幅越えに対するスクロールバーへの対応 */
+	z-index: 2;
+}
+
+/*　↓IE6以下用ハック↓　*/
+* html #pagebuild_in {
+	height: 100%;
+}
+
+#container {
+	width: 950px;
+	margin: 0 auto; /* サイトの中心揃え */
+	padding-bottom: 115px;
+	text-align: left;
+}
+
+/*　↓IE6以下用ハック↓　*/
+* html #container {
+	height: 100%;
+}
+
+#header {
+	width: 950px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 950px;
+	height: 115px;
+}
+
+#footer_bg {
+	width: 100%;
+	height: 115px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+/*　↓IE7以外のモダンブラウザ用ハック↓　*/
+html>/**/body #footer_bg {
+	position: relative;
+	bottom: 115px;
+	margin-bottom: -115px;
+}
+
+.F_bg_home {
+	background: url("../images/bg_footer_home.png") repeat-x;
+	background-position: 0 0;
+}
+
+.F_bg_base {
+	background: url("../images/bg_footer_base.gif") repeat-x;
+	background-position: 0 0;
+}
+
+
+/*-- ########################################################### --*/
+
+#wrapper {
+	width: 950px;
+	margin: 0 0 60px;
+	position: relative;
+}
+
+/* ↓for lte IE6↓ */
+* html #wrapper {
+	position: static;
+}
+
+#area_main_home {
+	width: 515px;
+	float: left;
+	margin: 40px 0 0;
+}
+
+#area_sub_home {
+	width: 400px;
+	float: right;
+	margin: 40px 0 0;
+}
+
+#area_main_base {
+	width: 660px;
+	float: left;
+	margin: 0 0 0;
+}
+
+#area_sub_base {
+	width: 270px;
+	float: right;
+	margin: 0 0 0;
+}
+
+

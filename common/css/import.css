@@ -1,0 +1,12 @@
+/*-- 外部スタイルシート base.css --*/
+@import url("base.css");
+
+/*-- 外部スタイルシート  layout.css --*/
+@import url("layout.css");
+
+/*-- 外部スタイルシート  style1.css --*/
+@import url("style1.css");
+
+/*-- 外部スタイルシート  style2.css --*/
+@import url("style2.css");
+
